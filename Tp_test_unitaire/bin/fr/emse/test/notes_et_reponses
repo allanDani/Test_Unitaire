@@ -1,0 +1,46 @@
+1. La classe Money() a été créée pour gérer les opérations liées à l'argent.
+
+2. La classe MoneyTest() a été mise en place via JUnit, avec la méthode testSimpleAdd() 
+    pour vérifier les opérations de base de la classe Money().
+
+3. Lors de l'exécution du test, un onglet "JUnit" s'affiche avec une barre rouge, 
+    indiquant un échec du test. Cela est dû à une erreur dans la classe MoneyTest(), 
+    notamment au niveau de la méthode equals() qui n'est pas implémentée dans la 
+    classe Money().
+
+4. Une méthode testEquals() a été ajoutée pour vérifier le bon fonctionnement de 
+    la méthode equals() de la classe Money().
+
+5. Malgré les mêmes valeurs attribuées (12 pour fAmount et "CHF" pour fCurrency), 
+    le test échoue à nouveau. La méthode equals() ne compare pas correctement 
+    ces attributs et considère donc que ce sont deux objets distincts.
+
+6. En surchargeant la méthode equals(), le test réussit et la barre de progression 
+    change de couleur pour devenir verte.
+
+7. L'utilisation de l'annotation @Before dans Money.java assure que le test réussit 
+    malgré les modifications apportées.
+
+8. Une classe MoneyBag() a été créée, avec l'ajout de la méthode equals() pour gérer 
+    les opérations liées à la gestion de plusieurs objets Money.
+
+9. La classe MoneyBagTest() a été créée pour tester les fonctionnalités de la classe 
+    MoneyBag().
+
+10. Les tests sont concluants, démontrant le bon fonctionnement de la classe MoneyBag().
+
+11. Une suite de tests, AllTests, a été créée pour regrouper l'ensemble des tests, 
+    qui ont tous été exécutés avec succès.
+
+12. Des méthodes telles que testMixedSimpleAdd, testBagSimpleAdd, testSimpleBagAdd et 
+    testBagBagAdd ont été écrites dans MoneyBagTest.java pour évaluer différents 
+    cas d'utilisation de la classe MoneyBag().
+
+13. Des modifications ont été apportées et le code a été compilé pour assurer le bon 
+    fonctionnement des méthodes précédemment mentionnées.
+
+14. Si nécessaire, les objets MoneyBag ont été simplifiés en objets Money pour faciliter 
+    les opérations et les tests.
+
+15. Tous les tests ont été vérifiés avec succès et le projet s'exécute désormais 
+    sans erreur.

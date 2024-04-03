@@ -1,0 +1,31 @@
+1. Création de la classe Money.
+
+2. Création de la classe MoneyTest() via JUnit, avec la méthode testSimpleAdd().
+
+3. Lors de l'exécution du test, un onglet "JUnit" s'affiche avec une barre rouge, indiquant un échec du test. Cela est dû à une erreur dans la classe MoneyTest(), notamment au niveau de la méthode equals() qui n'est pas implémentée dans la classe Money().
+
+4. La méthode testEquals().
+
+5. Malgré les mêmes valeurs attribuées (12 pour fAmount et "CHF" pour fCurrency), 
+    le test échoue à nouveau. La méthode equals() ne compare pas correctement 
+    ces attributs et considère donc que ce sont deux objets distincts.
+
+6. En surchargeant la méthode equals(), le test réussit et la barre de progression change de couleur pour devenir verte.
+
+7. L'annotation @Before dans Money.java.
+
+8. Création de la classe MoneyBag(), avec ajout de la méthode equals().
+
+9. La classe MoneyBagTest() crée via JUnit.
+
+10. Les tests sont concluants, démontrant le bon fonctionnement de la classe MoneyBag().
+
+11. La suite de tests, AllTests.
+
+12. Des méthodes telles que testMixedSimpleAdd, testBagSimpleAdd, testSimpleBagAdd et testBagBagAdd ont été écrites dans MoneyBagTest.java.
+
+13. Des modifications ont été apportées et le code a été compilé pour assurer le bon fonctionnement des méthodes précédemment mentionnées.
+
+14. Si nécessaire, les objets MoneyBag ont été simplifiés en objets Money pour faciliter les opérations et les tests.
+
+15. Tous les tests ont été vérifiés avec succès et le projet s'exécute désormais sans erreur.
